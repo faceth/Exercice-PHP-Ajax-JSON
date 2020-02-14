@@ -11,7 +11,7 @@ function ajaxCall(params)
         var parameters = '?';
         for(var i in params.parameters)
         {
-            parameters+=Object.keys(params.parameters[i])[0]+"="+params.parameters[i][Object.keys(params.parameters[i])[0]];
+            parameters+=Object.keys(params.parameters[i])[0]+"="+params.parameters[i][Object.keys(params.parameters[i])[0]]+"&";
         }
 
         url+=parameters;
